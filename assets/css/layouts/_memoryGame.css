@@ -1,0 +1,64 @@
+@import '../bases/_typography.css';
+
+#container{
+    height: 100vh;
+    background-image: url('../../images/backgrounds/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.memory-game{
+    height: 70vh;
+    width: 90%;
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.memory-card {
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.front-face, .back-face{
+    height: 180px;
+    margin: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.back-face:hover{
+    transform: scale(1.1);
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.winner{
+    position: absolute;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12em;
+}

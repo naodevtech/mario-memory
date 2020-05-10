@@ -1,0 +1,4 @@
+@import './bases/_reset.css';
+@import './bases/_typography.css';
+@import'./layouts/_lineBrick.css';
+@import'./layouts/_memoryGame.css';

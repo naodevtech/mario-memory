@@ -1,0 +1,21 @@
+#line-bricks-top{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#line-bricks-top img{
+    height: 80px;
+}
+
+#line-bricks-bottom{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+#line-bricks-bottom img{
+    height: 80px;
+}
